@@ -7,4 +7,4 @@ See the page `reproducible-research-doc`_ for complete history.
 
 LICENSE: BSD
 
-.. _`reproducible-research-doc`: https://github.com/parrondo/reproducible-research-doc
+.. _`reproducible-research-doc`: https://parrondo.github.io/reproducible-research-doc/
