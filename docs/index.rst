@@ -11,7 +11,7 @@
 .. include:: intro.rst
 
 Welcome to Reproducible Research documentation!
-=======================================
+===============================================
 
 .. toctree::
    :maxdepth: 3
@@ -31,7 +31,7 @@ Appendix
 ========
 
 Use this files like templates to your project documentation.
-Download from github.
+Download from github `reproducible-research-doc`_.
 
 .. toctree::
    
@@ -44,3 +44,5 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+.. _`reproducible-research-doc`: https://github.com/parrondo/reproducible-research-doc
