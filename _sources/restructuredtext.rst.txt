@@ -61,4 +61,9 @@ This is another form to link images:
 
 .. image:: images/restructuredtext/restructured-artificial-intelligence-brain.jpg
 
+.. csv-table::
+    :header: Header1, Header2, Header3
 
+    A, B, "These lines appear as one line,
+    even though they are written in two lines."
+    C, D, "This is normal text. ``this is inline stuff that is very long and may wrap on multiple lines of text in a table cell, and it could look OK`` This is normal text again."

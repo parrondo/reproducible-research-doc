@@ -136,6 +136,32 @@
 <div class="section" id="cleaning-up">
 <h2>Cleaning up<a class="headerlink" href="#cleaning-up" title="Permalink to this headline">¶</a></h2>
 <p>Once your feature branch has been merged, the merging contributor will delete the branch as it is no longer needed. Now you can remove the branch on your local repository. Open a terminal, navigate to your repository, and switch to the <code class="code docutils literal"><span class="pre">master</span></code> branch. delete local branch and tracking information of remote branch with <a class="reference internal" href="#frequently-used-git-commands">Frequently Used Git Commands</a>.</p>
+</div>
+<div class="section" id="keeping-a-github-fork-updated">
+<h2>Keeping a Github fork updated<a class="headerlink" href="#keeping-a-github-fork-updated" title="Permalink to this headline">¶</a></h2>
+<p>You forked a Github repo, example: cuemacro/findatapy to parrondo/findatapy, and want to keep it updated.</p>
+<p>First track it:</p>
+<p><code class="docutils literal"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/cuemacro/findatapy.git</span></code>
+<code class="docutils literal"><span class="pre">cd</span> <span class="pre">findatapy</span></code>
+<code class="docutils literal"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">upstream</span> <span class="pre">git&#64;github.com:cuemacro/findatapy.git</span></code></p>
+<p>Second update it:</p>
+<p><code class="docutils literal"><span class="pre">git</span> <span class="pre">fetch</span> <span class="pre">upstream</span></code>
+<code class="docutils literal"><span class="pre">git</span> <span class="pre">rebase</span> <span class="pre">upstream/master</span></code></p>
+<p>Third:</p>
+<p>Create a remote Github account and push it</p>
+</div>
+<div class="section" id="git-simple">
+<h2>git-simple<a class="headerlink" href="#git-simple" title="Permalink to this headline">¶</a></h2>
+<p>Git sometimes requires typing two or three commands just to execute something basic like fetching new code. <a class="reference external" href="https://github.com/parrondo/git-simple">git-simple</a> adds a few new commands — <cite>gremote</cite>, <cite>gpull</cite>, <cite>gpush</cite>, <cite>gbranch</cite>, <cite>gmerge</cite> and <cite>gpublish</cite> which:</p>
+<ul class="simple">
+<li><strong>gremote</strong> Creates a remote Github repository from the current local directory;</li>
+<li><strong>gmerge</strong> Tries to merge a local branch into the current branch;</li>
+<li><strong>gpush</strong> Sends your local branch changes to the remote branch;</li>
+<li><strong>gpull</strong> Pulls remote changes using rebase &amp; tries to rebundle;</li>
+<li><strong>gbranch</strong> Creates and tracks remote branches if they are available;</li>
+<li><strong>gpublish</strong> Publish your sphinx docs on Github gh-pages;</li>
+</ul>
+<p><em>Less time fighting Git.</em></p>
 <table class="docutils footnote" frame="void" id="id5" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">

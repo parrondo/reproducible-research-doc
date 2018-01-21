@@ -62,6 +62,38 @@ Cleaning up
 
 Once your feature branch has been merged, the merging contributor will delete the branch as it is no longer needed. Now you can remove the branch on your local repository. Open a terminal, navigate to your repository, and switch to the :code:`master` branch. delete local branch and tracking information of remote branch with `Frequently Used Git Commands`_.
 
+Keeping a Github fork updated
+-----------------------------
+You forked a Github repo, example: cuemacro/findatapy to parrondo/findatapy, and want to keep it updated.
+
+First track it:
+
+``git clone https://github.com/cuemacro/findatapy.git``
+``cd findatapy``
+``git remote add upstream git@github.com:cuemacro/findatapy.git``
+
+Second update it:
+
+``git fetch upstream``
+``git rebase upstream/master``
+
+Third:
+
+Create a remote Github account and push it
+
+git-simple
+----------
+
+Git sometimes requires typing two or three commands just to execute something basic like fetching new code. `git-simple`_ adds a few new commands — `gremote`, `gpull`, `gpush`, `gbranch`, `gmerge` and `gpublish` which:
+
+* **gremote** Creates a remote Github repository from the current local directory;
+* **gmerge** Tries to merge a local branch into the current branch;
+* **gpush** Sends your local branch changes to the remote branch;
+* **gpull** Pulls remote changes using rebase & tries to rebundle;
+* **gbranch** Creates and tracks remote branches if they are available;
+* **gpublish** Publish your sphinx docs on Github gh-pages;
+
+*Less time fighting Git.*
 
 .. [1] Always check :code:`git status` before add or commit to prevent adding unwanted files. :code:`git add .` is not a good practice
 .. [2] For Git commit workflow, see `The Three Stages`_
@@ -72,3 +104,4 @@ Once your feature branch has been merged, the merging contributor will delete th
 .. _`The Three Stages`: https://git-scm.com/book/en/v2/Getting-Started-Git-Basics#_the_three_states
 .. _`this page`: https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
 .. _`about pull request`: https://help.github.com/articles/about-pull-requests/
+.. _`git-simple`: https://github.com/parrondo/git-simple
