@@ -68,14 +68,14 @@ You forked a Github repo, example: cuemacro/findatapy to parrondo/findatapy, and
 
 First track it:
 
- :code:``git clone https://github.com/cuemacro/findatapy.git``
- :code:``cd findatapy``
- :code:``git remote add upstream git@github.com:cuemacro/findatapy.git``
+* ``git clone https://github.com/cuemacro/findatapy.git``
+* ``cd findatapy``
+* ``git remote add upstream git@github.com:cuemacro/findatapy.git``
 
 Second update it:
 
- :code:``git fetch upstream``
- :code:``git rebase upstream/master``
+* ``git fetch upstream``
+* ``git rebase upstream/master``
 
 Third:
 

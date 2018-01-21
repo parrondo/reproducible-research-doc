@@ -141,14 +141,16 @@
 <h2>Keeping a Github fork updated<a class="headerlink" href="#keeping-a-github-fork-updated" title="Permalink to this headline">¶</a></h2>
 <p>You forked a Github repo, example: cuemacro/findatapy to parrondo/findatapy, and want to keep it updated.</p>
 <p>First track it:</p>
-<blockquote>
-<div>:code:<code class="docutils literal"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/cuemacro/findatapy.git</span></code>
-:code:<code class="docutils literal"><span class="pre">cd</span> <span class="pre">findatapy</span></code>
-:code:<code class="docutils literal"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">upstream</span> <span class="pre">git&#64;github.com:cuemacro/findatapy.git</span></code></div></blockquote>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/cuemacro/findatapy.git</span></code></li>
+<li><code class="docutils literal"><span class="pre">cd</span> <span class="pre">findatapy</span></code></li>
+<li><code class="docutils literal"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">upstream</span> <span class="pre">git&#64;github.com:cuemacro/findatapy.git</span></code></li>
+</ul>
 <p>Second update it:</p>
-<blockquote>
-<div>:code:<code class="docutils literal"><span class="pre">git</span> <span class="pre">fetch</span> <span class="pre">upstream</span></code>
-:code:<code class="docutils literal"><span class="pre">git</span> <span class="pre">rebase</span> <span class="pre">upstream/master</span></code></div></blockquote>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">git</span> <span class="pre">fetch</span> <span class="pre">upstream</span></code></li>
+<li><code class="docutils literal"><span class="pre">git</span> <span class="pre">rebase</span> <span class="pre">upstream/master</span></code></li>
+</ul>
 <p>Third:</p>
 <p>Create a remote Github account and push it</p>
 </div>
