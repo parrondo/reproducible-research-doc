@@ -66,18 +66,20 @@ Keeping a Github fork updated
 -----------------------------
 You forked a Github repo, example: cuemacro/findatapy to parrondo/findatapy, and want to keep it updated.
 
-First track it:
+First clone your fork locally:
 
-* ``git clone https://github.com/cuemacro/findatapy.git``
+* ``git clone https://github.com/parrondo/findatapy.git``
 * ``cd findatapy``
+
+Second add remote from original repository
+
 * ``git remote add upstream git@github.com:cuemacro/findatapy.git``
-
-Second update it:
-
 * ``git fetch upstream``
 * ``git rebase upstream/master``
 
-Third:
+Third update your remote repository with the original one from your local repository:
+
+* ``git pull upstream master``
 
 Create a remote Github account and push it
 
