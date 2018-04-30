@@ -81,7 +81,6 @@ Third update your remote repository with the original one from your local reposi
 
 * ``git pull upstream master``
 
-Create a remote Github account and push it
 
 git-simple
 ----------
