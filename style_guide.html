@@ -1,26 +1,15 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
     <title>Style Guide &#8212; reproducible-research-doc  documentation</title>
-    
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
@@ -28,8 +17,7 @@
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Page Title, h1: reStructuredText Primer text template" href="restructuredtext.html" />
     <link rel="prev" title="Git and GitHub" href="git.html" /> 
-  </head>
-  <body role="document">
+  </head><body>
       <div class="header" role="banner"><h1 class="heading"><a href="index.html">
           <span>reproducible-research-doc  documentation</span></a></h1>
         <h2 class="heading"><span>Style Guide</span></h2>
@@ -51,7 +39,7 @@
   <div class="section" id="style-guide">
 <h1>Style Guide<a class="headerlink" href="#style-guide" title="Permalink to this headline">¶</a></h1>
 <p>Make your text as literal and specific as possible. Put yourself in the place of the person who is using your project
-and looking for instructions on performing a task. Don&#8217;t make them guess, but spell
+and looking for instructions on performing a task. Don’t make them guess, but spell
 out every step in order, and tell exactly what buttons to click or what form
 fields to fill out. Give complete information; for example, when using a
 time variable be sure to say if it is in seconds, miliseconds or some other unit value.</p>
@@ -64,7 +52,7 @@ time variable be sure to say if it is in seconds, miliseconds or some other unit
 <p>There are many ways to markup headings and subheadings. This is my preferred way.
 Use title case. Three levels is enough; if you find that you need more,
 then you should re-think the organization of your text:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">==============</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==============</span>
 <span class="n">Page</span> <span class="n">Title</span><span class="p">,</span> <span class="n">h1</span>
 <span class="o">==============</span>
 
@@ -89,16 +77,16 @@ then you should re-think the organization of your text:</p>
 <div class="section" id="labels-and-code">
 <h2>Labels and Code<a class="headerlink" href="#labels-and-code" title="Permalink to this headline">¶</a></h2>
 <p>Use double-backticks for inline code and command examples:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>``sudo -u www-data php occ files:scan --help``
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>``sudo -u www-data php occ files:scan --help``
 ``maintenance:install``
 </pre></div>
 </div>
 <p>This is how they render:</p>
-<p><code class="docutils literal"><span class="pre">sudo</span> <span class="pre">-u</span> <span class="pre">www-data</span> <span class="pre">php</span> <span class="pre">occ</span> <span class="pre">files:scan</span> <span class="pre">--help</span></code></p>
-<p><code class="docutils literal"><span class="pre">maintenance:install</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">-u</span> <span class="pre">www-data</span> <span class="pre">php</span> <span class="pre">occ</span> <span class="pre">files:scan</span> <span class="pre">--help</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">maintenance:install</span></code></p>
 <p>When you are giving hyperlinks as examples, use double-backticks rather than
 creating a live hyperlink:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>``https://example.com``
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>``https://example.com``
 </pre></div>
 </div>
 </div>
@@ -113,7 +101,7 @@ creating a live hyperlink:</p>
 <ol class="arabic simple" start="2">
 <li>Add images to the subfolder created in step 1.  Name the images with a prefix identifying the markdown file they are associated with, separated hyphens with a brief description of the image.</li>
 </ol>
-<p>For example: <strong>code-deep-learning-view.png</strong> for a a screenshot of the code&#8217;s modules.</p>
+<p>For example: <strong>code-deep-learning-view.png</strong> for a a screenshot of the code’s modules.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The underscore character causes GitHub to incorrectly process the image filenames in Markdown, which leads to problems in building files in the ReadtheDocs.</p>
@@ -123,9 +111,9 @@ creating a live hyperlink:</p>
 </ol>
 <p>All images must have alt tags, which are brief and descriptive, and figure
 numbers. Sphinx RST markup does not have a tag for figure numbers, so you must
-use the caption element. You may use simple numbering like &#8220;Figure 1, Figure 2&#8221;,
+use the caption element. You may use simple numbering like “Figure 1, Figure 2”,
 or add a caption. Captions must follow a blank line and be italicized, like this example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">figure</span><span class="p">::</span> <span class="n">images</span><span class="o">/</span><span class="n">code</span><span class="o">/</span><span class="n">code</span><span class="o">-</span><span class="n">deep</span><span class="o">-</span><span class="n">learning</span><span class="o">-</span><span class="n">view</span><span class="o">.</span><span class="n">png</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">figure</span><span class="p">::</span> <span class="n">images</span><span class="o">/</span><span class="n">code</span><span class="o">/</span><span class="n">code</span><span class="o">-</span><span class="n">deep</span><span class="o">-</span><span class="n">learning</span><span class="o">-</span><span class="n">view</span><span class="o">.</span><span class="n">png</span>
    <span class="p">:</span><span class="n">align</span><span class="p">:</span> <span class="n">center</span>
    <span class="p">:</span><span class="n">alt</span><span class="p">:</span> <span class="n">Optional</span> <span class="n">title</span><span class="o">.</span>
 
@@ -135,12 +123,12 @@ or add a caption. Captions must follow a blank line and be italicized, like this
 </div>
 <div class="section" id="example-url">
 <h2>Example URL<a class="headerlink" href="#example-url" title="Permalink to this headline">¶</a></h2>
-<p>Use <code class="docutils literal"><span class="pre">https://example.com</span></code> in your examples where you want to include an URL.</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">https://example.com</span></code> in your examples where you want to include an URL.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">you may not use github wiki page editor preview to determine which markdown <code class="code docutils literal"><span class="pre">#</span></code> title level you should use, since github will render major <code class="code docutils literal"><span class="pre">#</span></code> header is usually very large.</p>
+<p class="last">you may not use github wiki page editor preview to determine which markdown <code class="code docutils literal notranslate"><span class="pre">#</span></code> title level you should use, since github will render major <code class="code docutils literal notranslate"><span class="pre">#</span></code> header is usually very large.</p>
 </div>
-<p>After creating a document, make sure your new document file name is in <code class="code docutils literal"><span class="pre">index.rst</span></code> or satisfying any pattern matching in any <code class="code docutils literal"><span class="pre">toctree</span></code> section. Otherwise, readers are not able to navigate to your page (<strong>In other words, your documents are useless</strong>)</p>
+<p>After creating a document, make sure your new document file name is in <code class="code docutils literal notranslate"><span class="pre">index.rst</span></code> or satisfying any pattern matching in any <code class="code docutils literal notranslate"><span class="pre">toctree</span></code> section. Otherwise, readers are not able to navigate to your page (<strong>In other words, your documents are useless</strong>)</p>
 </div>
 </div>
 
@@ -160,7 +148,7 @@ or add a caption. Captions must follow a blank line and be italicized, like this
 
     <div class="footer" role="contentinfo">
         &#169; Copyright 2017, Parrondo.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.6.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.4.
     </div>
   </body>
 </html>
